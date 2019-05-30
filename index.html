@@ -23,16 +23,58 @@
     }
 
     body {
-      width: 700px;
+      padding: 50px;
+      width: 100%;
       top: 150px;
       position: absolute;
       z-index: -1;
+      box-sizing: border-box;
     }
-    .sidebar {
+
+    h2 {
+      font-family: "Poiret One";
+    }
+
+    h3 {
+      font-family: "Poiret One";
+    }
+
+    .entry {
       display: inline-block;
+      height: 75%;
+      width: 100%;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+    }
+
+    .entry:hover {
+      height: 100%;
+      overflow: visible;
+      white-space: normal;
+    }
+
+    .sub_entry {
+      display: inline-block;
+      height: 75%;
+      width: 100%;
+      max-width: 100%;
+      word-wrap: break-word;
+      box-sizing: border-box;
+    }
+
+    .entry > div {
+      padding: 10px
+    }
+
+    .sidebar {
+      display: block;
       width: 200px;
-      padding: 5px;
-      margin: 5px;
+      padding: 5.5px;
+      margin: 5.5px;
       position: fixed;
       text-align: left;
       left: 80%;
@@ -40,8 +82,10 @@
       z-index: 1;
       background-color: white;
       opacity: 100%;
-      border: solid
+      border: solid;
+      border-width: 2px;
     }
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -71,54 +115,51 @@
 </header>
 <body class="body">
   <div class="portfolio_entries">
-    <p>
-      On the following day Parkins did, as he had hoped, succeed in getting
-      away from his college, and in arriving at Burnstow. He was made welcome
-      at the Globe Inn, was safely installed in the large double-bedded room of
-      which we have heard, and was able before retiring to rest to arrange his
-      materials for work in apple-pie order upon a commodious table which
-      occupied the outer end of the room, and was surrounded on three sides by
-      windows looking out seaward; that is to say, the central window looked
-      straight out to sea, and those on the left and right commanded prospects
-      along the shore to the north and south respectively. On the south you saw
-      the village of Burnstow. On the north no houses were to be seen, but only
-      the beach and the low cliff backing it. Immediately in front was a
-      strip--not considerable--of rough grass, dotted with old anchors,
-      capstans, and so forth; then a broad path; then the beach. Whatever may
-      have been the original distance between the Globe Inn and the sea, not
-      more than sixty yards now separated them.
-    </p>
-    <p>
-      The rest of the population of the inn was, of course, a golfing one, and
-      included few elements that call for a special description. The most
-      conspicuous figure was, perhaps, that of an _ancien militaire_, secretary
-      of a London club, and possessed of a voice of incredible strength, and of
-      views of a pronouncedly Protestant type. These were apt to find utterance
-      after his attendance upon the ministrations of the Vicar, an estimable
-      man with inclinations towards a picturesque ritual, which he gallantly
-      kept down as far as he could out of deference to East Anglian tradition.
-    </p>
-    <p>
-      Professor Parkins, one of whose principal characteristics was pluck,
-      spent the greater part of the day following his arrival at Burnstow in
-      what he had called improving his game, in company with this Colonel
-      Wilson: and during the afternoon--whether the process of improvement were
-      to blame or not, I am not sure--the Colonel's demeanour assumed a
-      colouring so lurid that even Parkins jibbed at the thought of walking
-      home with him from the links. He determined, after a short and furtive
-      look at that bristling moustache and those incarnadined features, that it
-      would be wiser to allow the influences of tea and tobacco to do what they
-      could with the Colonel before the dinner-hour should render a meeting
-      inevitable.
-    </p>
+    <div class="entry"><h2>Welcome</h2>
+    A newly trained developer, recently graduated from PDX Code Guild.
+    Ready to forge a new career in coding, I have experience in Python, HTML, CSS, Javascript, Vue.js, and Django.
+    I bring my dedicated learner's mindset and my family work ethic to bear in this long-awaited change of career.
+    </div>
+    <div class="entry"><h2>Work History</h2>
+    I am new to the field of coding, but I bring over seven years of considerable work experience from my prior fields.
+    Previously my focus has been in banking and data entry. A desire to learn the framework that establishes the systems I worked with drove me to pursue coding.
+    Prior employers (through staffing agencies) include Wells Fargo, Care Oregon, Opus, and QuinStreet, all of which contributed greatly to my skills in officework and clerical responsibilities.
+    The most formative work I've done was with Wells Fargo in their Home Equity department in Beaverton, which finely honed my efficiency and attention to detail, as well as my love of detective work and troubleshooting.
+    I owe much of my potent work ethic, high degree of diligence, and professional disposition to my early training under my mother and father at our wholesale gift supplier company, Cadeau.
+    </div>
+    <div class="entry"><h2>About Me</h2>
+    I grew up in Orinda, California, and moved to Oregon to attend Willamette University, graduating with a BA in English.
+    I've always been interested in history, literature, foreign media, computers and computer games.
+    My philosophy towards learning is accept the experience as it is; an easy challenge or a tremendous strugle are equally valuable sources of enrichment.
+    Currently, one of my goals is to learn React.
+    </div>
+    <div><h2>Select Projects</h2>
+      <div class="sub_entry">
+        <h3><a><b>WorldShelf</b></a></h3>
+        <li>Social bookshelf app that allows sharing of user impressions and tracking progress by page.</li>
+        <li>Spoiler Filtering allows users to filter out comment text from other users further along than them.</li>
+        <li>Made with Django, Vue.js and CSS. Utilizes the Google Books API</li>
+      </div>
+      <div class="sub_entry">
+        <h3><a><b>Vue To Do List/Vanilla JS To Do List</b></a></h3>
+        <li>Easy functioning To Do List in both Vue.JS and base Javascript.</li>
+        <li>JS version allows sticky note-style customization functionality.</li>
+      </div>
+      <div class="sub_entry">
+        <h3><a><b>Skeleton Dungeon</a></b></h3>
+        <li>A time-killing prototype adventure game coded in Python 3.0.</li>
+        <li>Utilizes functions, classes, and coordinates to manage an inventory and creature system.</li>
+        <li>Still fairly simple for now; one might venture as to call it bare-bones.</li>
+      </div>
+    </div>
   </div>
 </body>
 <section class= "sidebar">
   <ul>
-  <li><a href="">LinkedIn</a></li>
-  <li><a href="https://github.com/darrenmacomber">GitHub</a></li>
-  <li><a href="">Resume</a></li>
-  <li><a href="">Email</a></li>
+    <li><a href="https://www.linkedin.com/in/darren-macomber-dmOR/">LinkedIn</a></li>
+    <li><a href="https://github.com/darrenmacomber">GitHub</a></li>
+    <li><a href="">Resume</a></li>
+    <li><a href="">Contact</a></li>
   </ul>
 </section>
 <footer>
