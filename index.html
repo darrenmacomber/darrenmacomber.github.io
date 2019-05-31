@@ -22,6 +22,24 @@
       font-size: 30px
     }
 
+    footer {
+      position: fixed;
+      z-index: 0;
+      bottom: 0px;
+      width: 100%;
+      background-color: white;
+      opacity: 100%;
+      font-family: "Poiret One";
+      font-size: 20px
+    }
+
+    .foot_container {
+      width: auto;
+      display: flex;
+      justify-content: space-around;
+      box-sizing: border-box;
+    }
+
     body {
       padding: 50px;
       width: 100%;
@@ -73,8 +91,6 @@
     .sidebar {
       display: block;
       width: 200px;
-      padding: 5.5px;
-      margin: 5.5px;
       position: fixed;
       text-align: left;
       left: 80%;
@@ -84,6 +100,7 @@
       opacity: 100%;
       border: solid;
       border-width: 2px;
+      box-sizing: border-box;
     }
 
     ul {
@@ -160,13 +177,16 @@
     <li><a href="https://github.com/darrenmacomber">GitHub</a></li>
     <li><a href="https://github.com/darrenmacomber/darrenmacomber.github.io/raw/master/DarrenResume2019.pdf">Resume</a></li>
     <li><a href="">Contact</a></li>
-    <li>Self-Starter</li>
-    <li>Detail-Oriented<li>
-    <li>Communicator</li>
-    <li>Inquisitive</li>
-    <li>Professional</li>
   </ul>
 </section>
 <footer>
+<hr>
+  <div class="foot_container">
+    <span>Self-Starter</span>
+    <span>Detail-Oriented</span>
+    <span>Communicator</span>
+    <span>Inquisitive</span>
+    <span>Professional</span>
+  </div>
 </footer>
 </html>
